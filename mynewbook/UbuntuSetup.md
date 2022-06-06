@@ -26,7 +26,7 @@ name: figure1
 .
 ```
 
-Allocate Memory size (Minimum: 2000MB, Recommended: 4000MB) [(Figure 2)] (figure2)
+Allocate Memory size (Minimum: 2000MB, Recommended: 4000MB) [(Figure 2)](figure2)
 ```{figure} /images/figure2.png
 ---
 height: 300px
