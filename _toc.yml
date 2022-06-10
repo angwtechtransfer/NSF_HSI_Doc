@@ -3,13 +3,21 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: UbuntuSetup
-- file: docker
-- file: modelreferences
-- file: singularity
-- file: diftosif
-- file: runningsif
-- file: github
-
+parts:
+- caption: Getting the OS
+  chapters:
+  - file: os/UbuntuSetup
+- caption: Running Tests
+  chapters:
+  - file: running/docker
+  - file: running/singularity
+  - file: running/diftosif
+  - file: running/runningsif
+  - file: running/modelreferences
+- caption: Github and Documentation
+  chapters:
+  - file: git/github
+  - file: git/gitBranch
+  - file: git/gitExample
+  - file: git/jupyterbooks
 
