@@ -3,13 +3,13 @@
 
 format: jb-book
 root: intro
-options:
-  numbered: true
 parts:
-- caption: Getting the OS
+- caption: Computing Infrastructure
+  numbered: true
   chapters:
   - file: os/UbuntuSetup
 - caption: Running Tests
+  numbered: true
   chapters:
   - file: running/docker
   - file: running/singularity
@@ -17,6 +17,7 @@ parts:
   - file: running/runningsif
   - file: running/modelreferences
 - caption: Github and Documentation
+  numbered: true
   chapters:
   - file: git/github
   - file: git/gitBranch
