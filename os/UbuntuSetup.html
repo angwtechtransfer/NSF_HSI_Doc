@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>1. Setting Up Ubuntu Virtual Machine &#8212; HSI Documentation</title>
+    <title>1. Setting Up Ubuntu Virtual Machine &#8212; HSIS MMF Documentation</title>
   
   
   
@@ -61,7 +61,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="2. Docker" href="../running/docker.html" />
-    <link rel="prev" title="NSF Research Project: A Modular MultiLayer Framework for Real-Time Hyperspectral Image Segmentation Documentation" href="../intro.html" />
+    <link rel="prev" title="A Modular MultiLayer Framework for Real-Time Hyperspectral Image Segmentation" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -153,8 +153,8 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="HSI Documentation - Home"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="HSI Documentation - Home"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="HSIS MMF Documentation - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="HSIS MMF Documentation - Home"/>`);</script>
   
   
 </a></div>
@@ -175,7 +175,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    NSF Research Project: A Modular MultiLayer Framework for Real-Time Hyperspectral Image Segmentation Documentation
+                    <center>A Modular MultiLayer Framework for Real-Time Hyperspectral Image Segmentation</center>
                 </a>
             </li>
         </ul>
@@ -251,7 +251,7 @@
       
       
       
-      <li><a href="https://github.com/Fennrii/JupyterBook" target="_blank"
+      <li><a href="https://github.com/angwtechtransfer/NSF_HSI_Doc" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -268,7 +268,7 @@
       
       
       
-      <li><a href="https://github.com/Fennrii/JupyterBook/issues/new?title=Issue%20on%20page%20%2Fos/UbuntuSetup.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/angwtechtransfer/NSF_HSI_Doc/issues/new?title=Issue%20on%20page%20%2Fos/UbuntuSetup.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -392,10 +392,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#downloads">1.1. Downloads</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-create-a-new-virtual-machine">1.2. Step 1: Create a new Virtual Machine</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-selecting-ubuntu-for-the-vm">1.3. Step 2: Selecting Ubuntu for the VM</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-installing-ubuntu">1.4. Step 3: Installing Ubuntu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtain-the-required-software">1.1. Obtain the required software</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-new-virtual-machine">1.2. Create a new Virtual Machine</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-ubuntu-for-the-vm">1.3. Selecting Ubuntu for the VM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-ubuntu">1.4. Installing Ubuntu</a></li>
 </ul>
             </nav>
         </div>
@@ -409,71 +409,86 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="setting-up-ubuntu-virtual-machine">
 <h1><span class="section-number">1. </span>Setting Up Ubuntu Virtual Machine<a class="headerlink" href="#setting-up-ubuntu-virtual-machine" title="Link to this heading">#</a></h1>
-<p>To make our process as easy as possible to follow, we try to work in a linux envoronment.
-Here is a guide to installing Ubuntu for you to use going forwards.</p>
-<section id="downloads">
-<h2><span class="section-number">1.1. </span>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">#</a></h2>
-<p>Go to <a class="reference external" href="https://ubuntu.com/download/desktop">ubuntu.com</a> and download the latest iso version.</p>
-<p>Then go to <a class="reference external" href="https://www.virtualbox.org/">virtualbox.org</a> and download the latest version. You may use VMware if you prefer that.</p>
-<p>Once Virtual Box is downloaded go through the steps and install it.</p>
+<p>The best development platform for the project is a Unix/Linux based system. To work in a Windows local computer it is necessary to set a dual-boot system (Windows + Linux) or a Linux virtual machine.</p>
+<p>Here is a guide for installing Ubuntu VM in a Windows-based computer.</p>
+<section id="obtain-the-required-software">
+<h2><span class="section-number">1.1. </span>Obtain the required software<a class="headerlink" href="#obtain-the-required-software" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Operating System: Go to <a class="reference external" href="https://ubuntu.com/download/desktop">ubuntu.com</a> and download the latest iso version of the Ubuntu operating system.</p></li>
+<li><p>Virtualization software: Go to <a class="reference external" href="https://www.virtualbox.org/">virtualbox.org</a> and download the latest version for your local computer (Windows based). Alternatively you can use <a class="reference external" href="https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion">VMware Desktop Hypervisors</a>.</p></li>
+<li><p>Once Virtual Box is downloaded go through the steps and install it.</p></li>
+</ul>
 </section>
-<section id="step-1-create-a-new-virtual-machine">
-<h2><span class="section-number">1.2. </span>Step 1: Create a new Virtual Machine<a class="headerlink" href="#step-1-create-a-new-virtual-machine" title="Link to this heading">#</a></h2>
-<p>Open Virtual Box</p>
-<p>Click on “Machine” from the top toolbar, then click on “New”.</p>
-<p>Give a name to your virtual machine, then select the folder where you want to store it or keep it default. <a class="reference internal" href="#figure1"><span class="std std-ref">(Figure 1)</span></a></p>
-<figure class="align-default" id="figure1">
-<a class="reference internal image-reference" href="../_images/figure1.png"><img alt="../_images/figure1.png" src="../_images/figure1.png" style="height: 300px;" />
+<section id="create-a-new-virtual-machine">
+<h2><span class="section-number">1.2. </span>Create a new Virtual Machine<a class="headerlink" href="#create-a-new-virtual-machine" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Open Virtual Box</p></li>
+<li><p>Click on “Machine” from the top toolbar, then click on “New”.</p></li>
+<li><p>Give a name to your virtual machine, then select the folder where you want to store it or keep it default. See <a class="reference internal" href="#nameloc"><span class="std std-numref">Fig. 1.1</span></a></p></li>
+</ul>
+<figure class="align-default" id="nameloc">
+<a class="reference internal image-reference" href="../_images/figure1.png"><img alt="../_images/figure1.png" src="../_images/figure1.png" style="height: 350px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 1.1 </span><span class="caption-text">.</span><a class="headerlink" href="#figure1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.1 </span><span class="caption-text">Give name and location.</span><a class="headerlink" href="#nameloc" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Allocate Memory size (Minimum: 2000MB, Recommended: 4000MB) <a class="reference internal" href="#figure2"><span class="std std-ref">(Figure 2)</span></a></p>
-<figure class="align-default" id="figure2">
-<a class="reference internal image-reference" href="../_images/figure2.png"><img alt="../_images/figure2.png" src="../_images/figure2.png" style="height: 300px;" />
+<ul class="simple">
+<li><p>Allocate Memory size (Minimum: 2000MB, Recommended: 4000MB). See <a class="reference internal" href="#memsize"><span class="std std-numref">Fig. 1.2</span></a></p></li>
+</ul>
+<figure class="align-default" id="memsize">
+<a class="reference internal image-reference" href="../_images/figure2.png"><img alt="../_images/figure2.png" src="../_images/figure2.png" style="height: 350px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 1.2 </span><span class="caption-text">.</span><a class="headerlink" href="#figure2" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.2 </span><span class="caption-text">Give memory size.</span><a class="headerlink" href="#memsize" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Select “Create a Virtual Hard Disk”</p>
-<p>Select VDI (Virtual Box Disk Image)</p>
-<p>Select Dynamically allocated
-For the size, at least 25GB is recommended</p>
+<ul class="simple">
+<li><p>Select “Create a Virtual Hard Disk”</p></li>
+<li><p>Select VDI (Virtual Box Disk Image)</p></li>
+<li><p>Select Dynamically allocated. For the size, at least 25GB is recommended.</p></li>
+</ul>
 </section>
-<section id="step-2-selecting-ubuntu-for-the-vm">
-<h2><span class="section-number">1.3. </span>Step 2: Selecting Ubuntu for the VM<a class="headerlink" href="#step-2-selecting-ubuntu-for-the-vm" title="Link to this heading">#</a></h2>
-<p>Select your VM on the left side</p>
-<p>On the top tab select Settings</p>
-<p>Go to System &gt; Processor, change it from 1 to 2 <a class="reference internal" href="#figure3"><span class="std std-ref">(Figure 3)</span></a></p>
-<figure class="align-default" id="figure3">
-<a class="reference internal image-reference" href="../_images/figure3.png"><img alt="../_images/figure3.png" src="../_images/figure3.png" style="height: 300px;" />
+<section id="selecting-ubuntu-for-the-vm">
+<h2><span class="section-number">1.3. </span>Selecting Ubuntu for the VM<a class="headerlink" href="#selecting-ubuntu-for-the-vm" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Select your VM on the left side</p></li>
+<li><p>On the top tab select Settings</p></li>
+<li><p>Go to System &gt; Processor, change it from 1 to 2. See See <a class="reference internal" href="#procnum"><span class="std std-numref">Fig. 1.3</span></a></p></li>
+</ul>
+<figure class="align-default" id="procnum">
+<a class="reference internal image-reference" href="../_images/figure3.png"><img alt="../_images/figure3.png" src="../_images/figure3.png" style="height: 350px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 1.3 </span><span class="caption-text">.</span><a class="headerlink" href="#figure3" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.3 </span><span class="caption-text">Give processor number.</span><a class="headerlink" href="#procnum" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Now go to Storage and select the “Empty” CD icon <a class="reference internal" href="#figure4"><span class="std std-ref">(Figure 4)</span></a></p>
-<figure class="align-default" id="figure4">
-<a class="reference internal image-reference" href="../_images/figure4.png"><img alt="../_images/figure4.png" src="../_images/figure4.png" style="height: 300px;" />
+<ul class="simple">
+<li><p>Now go to Storage and select the “Empty” CD icon. See <a class="reference internal" href="#isofile"><span class="std std-numref">Fig. 1.4</span></a></p></li>
+</ul>
+<figure class="align-default" id="isofile">
+<a class="reference internal image-reference" href="../_images/figure4.png"><img alt="../_images/figure4.png" src="../_images/figure4.png" style="height: 350px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 1.4 </span><span class="caption-text">.</span><a class="headerlink" href="#figure4" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.4 </span><span class="caption-text">Select ISO file.</span><a class="headerlink" href="#isofile" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>On the right side, you will see another CD icon next to “IDE Secondary Master,” select it then choose “Choose a disk file” then select the ISO you downloaded earlier. <a class="reference internal" href="#figure5"><span class="std std-ref">(Figure 5)</span></a></p>
-<figure class="align-default" id="figure5">
-<a class="reference internal image-reference" href="../_images/figure5.png"><img alt="../_images/figure5.png" src="../_images/figure5.png" style="height: 300px;" />
+<ul class="simple">
+<li><p>On the right side, you will see another CD icon next to “IDE Secondary Master,” select it then choose “Choose a disk file” then select the ISO you downloaded earlier. See <a class="reference internal" href="#isofinal"><span class="std std-numref">Fig. 1.5</span></a> for the final selection.</p></li>
+</ul>
+<figure class="align-default" id="isofinal">
+<a class="reference internal image-reference" href="../_images/figure5.png"><img alt="../_images/figure5.png" src="../_images/figure5.png" style="height: 350px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 1.5 </span><span class="caption-text">.</span><a class="headerlink" href="#figure5" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.5 </span><span class="caption-text">Final selection.</span><a class="headerlink" href="#isofinal" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>After that select “OK” then “Start” your VM</p>
+<ul class="simple">
+<li><p>After that select “OK” then “Start” your VM</p></li>
+</ul>
 </section>
-<section id="step-3-installing-ubuntu">
-<h2><span class="section-number">1.4. </span>Step 3: Installing Ubuntu<a class="headerlink" href="#step-3-installing-ubuntu" title="Link to this heading">#</a></h2>
+<section id="installing-ubuntu">
+<h2><span class="section-number">1.4. </span>Installing Ubuntu<a class="headerlink" href="#installing-ubuntu" title="Link to this heading">#</a></h2>
 <p>The installation process is pretty self-explanitory.
 You are going to want to select “Install Ubuntu” on the first screen, then “Install third-party software for graphics …” on the second, then “Install Now”. You will have to fill out a form later, and then you are good to go.</p>
 <p>It is recommended that you save a snapshot after Ubuntu is properly installed so you don’t have to keep going through the process.</p>
@@ -516,7 +531,7 @@ You are going to want to select “Install Ubuntu” on the first screen, then �
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">NSF Research Project: A Modular MultiLayer Framework for Real-Time Hyperspectral Image Segmentation Documentation</p>
+        <p class="prev-next-title"><center>A Modular MultiLayer Framework for Real-Time Hyperspectral Image Segmentation</center></p>
       </div>
     </a>
     <a class="right-next"
@@ -544,10 +559,10 @@ You are going to want to select “Install Ubuntu” on the first screen, then �
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#downloads">1.1. Downloads</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-create-a-new-virtual-machine">1.2. Step 1: Create a new Virtual Machine</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-selecting-ubuntu-for-the-vm">1.3. Step 2: Selecting Ubuntu for the VM</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-installing-ubuntu">1.4. Step 3: Installing Ubuntu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtain-the-required-software">1.1. Obtain the required software</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-new-virtual-machine">1.2. Create a new Virtual Machine</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-ubuntu-for-the-vm">1.3. Selecting Ubuntu for the VM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-ubuntu">1.4. Installing Ubuntu</a></li>
 </ul>
   </nav></div>
 
@@ -562,7 +577,7 @@ You are going to want to select “Install Ubuntu” on the first screen, then �
   <div class="footer-item">
     
 <p class="component-author">
-By Andrew Satory
+By Luis A. Cueva Parra
 </p>
 
   </div>
@@ -572,7 +587,7 @@ By Andrew Satory
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>
