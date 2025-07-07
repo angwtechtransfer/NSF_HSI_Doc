@@ -1,83 +1,85 @@
 # Setting Up Ubuntu Virtual Machine
 
-To make our process as easy as possible to follow, we try to work in a linux envoronment.
-Here is a guide to installing Ubuntu for you to use going forwards.
+The best development platform for the project is a Unix/Linux based system. To work in a Windows local computer it is necessary to set a dual-boot system (Windows + Linux) or a Linux virtual machine.
 
-## Downloads
+Here is a guide for installing Ubuntu VM in a Windows-based computer.
 
-Go to [ubuntu.com](https://ubuntu.com/download/desktop) and download the latest iso version.
+## Obtain the required software
 
-Then go to [virtualbox.org](https://www.virtualbox.org/) and download the latest version. You may use VMware if you prefer that.
+- Operating System: Go to [ubuntu.com](https://ubuntu.com/download/desktop) and download the latest iso version of the Ubuntu operating system.
 
-Once Virtual Box is downloaded go through the steps and install it.
+- Virtualization software: Go to [virtualbox.org](https://www.virtualbox.org/) and download the latest version for your local computer (Windows based). Alternatively you can use [VMware Desktop Hypervisors](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion).
 
-## Step 1: Create a new Virtual Machine
+- Once Virtual Box is downloaded go through the steps and install it.
 
-Open Virtual Box
+## Create a new Virtual Machine
 
-Click on "Machine" from the top toolbar, then click on "New".
+- Open Virtual Box
+- Click on "Machine" from the top toolbar, then click on "New".
+- Give a name to your virtual machine, then select the folder where you want to store it or keep it default. See {numref}`nameLoc`
 
-Give a name to your virtual machine, then select the folder where you want to store it or keep it default. [(Figure 1)](figure1)
 ```{figure} /images/figure1.png
 ---
-height: 300px
-name: figure1
+height: 350px
+name: nameLoc
 ---
-.
+Give name and location.
 ```
 
-Allocate Memory size (Minimum: 2000MB, Recommended: 4000MB) [(Figure 2)](figure2)
+- Allocate Memory size (Minimum: 2000MB, Recommended: 4000MB). See {numref}`memSize`
+
 ```{figure} /images/figure2.png
 ---
-height: 300px
-name: figure2
+height: 350px
+name: memSize
 ---
-.
+Give memory size.
 ```
 
-Select "Create a Virtual Hard Disk"
+- Select "Create a Virtual Hard Disk"
 
-Select VDI (Virtual Box Disk Image)
+- Select VDI (Virtual Box Disk Image)
 
-Select Dynamically allocated
-For the size, at least 25GB is recommended
+- Select Dynamically allocated. For the size, at least 25GB is recommended.
 
-## Step 2: Selecting Ubuntu for the VM
+## Selecting Ubuntu for the VM
 
-Select your VM on the left side
+- Select your VM on the left side
 
-On the top tab select Settings
+- On the top tab select Settings
 
-Go to System > Processor, change it from 1 to 2 [(Figure 3)](figure3)
+- Go to System > Processor, change it from 1 to 2. See See {numref}`procNum` 
 ```{figure} /images/figure3.png
 ---
-height: 300px
-name: figure3
+height: 350px
+name: procNum
 ---
-.
+Give processor number.
 ```
 
-Now go to Storage and select the "Empty" CD icon [(Figure 4)](figure4)
+- Now go to Storage and select the "Empty" CD icon. See {numref}`isoFile`
+
 ```{figure} /images/figure4.png
 ---
-height: 300px
-name: figure4
+height: 350px
+name: isoFile
 ---
-.
+Select ISO file.
 ```
 
-On the right side, you will see another CD icon next to "IDE Secondary Master," select it then choose "Choose a disk file" then select the ISO you downloaded earlier. [(Figure 5)](figure5)
+- On the right side, you will see another CD icon next to "IDE Secondary Master," select it then choose "Choose a disk file" then select the ISO you downloaded earlier. See {numref}`isoFinal` for the final selection.
+
 ```{figure} /images/figure5.png
 ---
-height: 300px
-name: figure5
+height: 350px
+name: isoFinal
 ---
-.
+Final selection.
 ```
 
-After that select "OK" then "Start" your VM
+- After that select "OK" then "Start" your VM
 
-## Step 3: Installing Ubuntu
+## Installing Ubuntu
 
 The installation process is pretty self-explanitory.
 You are going to want to select "Install Ubuntu" on the first screen, then "Install third-party software for graphics ..." on the second, then "Install Now". You will have to fill out a form later, and then you are good to go.
