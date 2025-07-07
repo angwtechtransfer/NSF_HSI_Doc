@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Setting Up Ubuntu Virtual Machine &#8212; HSI Documentation</title>
+    <title>1. Setting Up Ubuntu Virtual Machine &#8212; HSI Documentation</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'os/UbuntuSetup';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Docker" href="../running/docker.html" />
+    <link rel="next" title="2. Docker" href="../running/docker.html" />
     <link rel="prev" title="NSF Research Project: A Modular MultiLayer Framework for Real-Time Hyperspectral Image Segmentation Documentation" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -179,24 +179,24 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting the OS</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Computing Infrastructure</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Setting Up Ubuntu Virtual Machine</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Setting Up Ubuntu Virtual Machine</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Running Tests</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../running/docker.html">Docker</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../running/singularity.html">Installing Singularity and Singularity-Compose</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../running/diftosif.html">Creating a SIF container from a .def File</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../running/runningsif.html">Running DeepHyperX from a SIF File</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../running/modelreferences.html">Models and Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../running/docker.html">2. Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../running/singularity.html">3. Installing Singularity and Singularity-Compose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../running/diftosif.html">4. Creating a SIF container from a .def File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../running/runningsif.html">5. Running DeepHyperX from a SIF File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../running/modelreferences.html">6. Models and Datasets</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Github and Documentation</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../git/github.html">Github Commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../git/gitBranch.html">Github Branches</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../git/gitExample.html">Forking a Github Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../git/jupyterbooks.html">Working with the JupyterBooks Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git/github.html">7. Github Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git/gitBranch.html">8. Github Branches</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git/gitExample.html">9. Forking a Github Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git/jupyterbooks.html">10. Working with the JupyterBooks Documentation</a></li>
 </ul>
 
     </div>
@@ -392,10 +392,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#downloads">Downloads</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-create-a-new-virtual-machine">Step 1: Create a new Virtual Machine</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-selecting-ubuntu-for-the-vm">Step 2: Selecting Ubuntu for the VM</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-installing-ubuntu">Step 3: Installing Ubuntu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#downloads">1.1. Downloads</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-create-a-new-virtual-machine">1.2. Step 1: Create a new Virtual Machine</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-selecting-ubuntu-for-the-vm">1.3. Step 2: Selecting Ubuntu for the VM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-installing-ubuntu">1.4. Step 3: Installing Ubuntu</a></li>
 </ul>
             </nav>
         </div>
@@ -408,17 +408,17 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="setting-up-ubuntu-virtual-machine">
-<h1>Setting Up Ubuntu Virtual Machine<a class="headerlink" href="#setting-up-ubuntu-virtual-machine" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">1. </span>Setting Up Ubuntu Virtual Machine<a class="headerlink" href="#setting-up-ubuntu-virtual-machine" title="Link to this heading">#</a></h1>
 <p>To make our process as easy as possible to follow, we try to work in a linux envoronment.
 Here is a guide to installing Ubuntu for you to use going forwards.</p>
 <section id="downloads">
-<h2>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.1. </span>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">#</a></h2>
 <p>Go to <a class="reference external" href="https://ubuntu.com/download/desktop">ubuntu.com</a> and download the latest iso version.</p>
 <p>Then go to <a class="reference external" href="https://www.virtualbox.org/">virtualbox.org</a> and download the latest version. You may use VMware if you prefer that.</p>
 <p>Once Virtual Box is downloaded go through the steps and install it.</p>
 </section>
 <section id="step-1-create-a-new-virtual-machine">
-<h2>Step 1: Create a new Virtual Machine<a class="headerlink" href="#step-1-create-a-new-virtual-machine" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.2. </span>Step 1: Create a new Virtual Machine<a class="headerlink" href="#step-1-create-a-new-virtual-machine" title="Link to this heading">#</a></h2>
 <p>Open Virtual Box</p>
 <p>Click on “Machine” from the top toolbar, then click on “New”.</p>
 <p>Give a name to your virtual machine, then select the folder where you want to store it or keep it default. <a class="reference internal" href="#figure1"><span class="std std-ref">(Figure 1)</span></a></p>
@@ -426,7 +426,7 @@ Here is a guide to installing Ubuntu for you to use going forwards.</p>
 <a class="reference internal image-reference" href="../_images/figure1.png"><img alt="../_images/figure1.png" src="../_images/figure1.png" style="height: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">.</span><a class="headerlink" href="#figure1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.1 </span><span class="caption-text">.</span><a class="headerlink" href="#figure1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Allocate Memory size (Minimum: 2000MB, Recommended: 4000MB) <a class="reference internal" href="#figure2"><span class="std std-ref">(Figure 2)</span></a></p>
@@ -434,7 +434,7 @@ Here is a guide to installing Ubuntu for you to use going forwards.</p>
 <a class="reference internal image-reference" href="../_images/figure2.png"><img alt="../_images/figure2.png" src="../_images/figure2.png" style="height: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text">.</span><a class="headerlink" href="#figure2" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.2 </span><span class="caption-text">.</span><a class="headerlink" href="#figure2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Select “Create a Virtual Hard Disk”</p>
@@ -443,7 +443,7 @@ Here is a guide to installing Ubuntu for you to use going forwards.</p>
 For the size, at least 25GB is recommended</p>
 </section>
 <section id="step-2-selecting-ubuntu-for-the-vm">
-<h2>Step 2: Selecting Ubuntu for the VM<a class="headerlink" href="#step-2-selecting-ubuntu-for-the-vm" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.3. </span>Step 2: Selecting Ubuntu for the VM<a class="headerlink" href="#step-2-selecting-ubuntu-for-the-vm" title="Link to this heading">#</a></h2>
 <p>Select your VM on the left side</p>
 <p>On the top tab select Settings</p>
 <p>Go to System &gt; Processor, change it from 1 to 2 <a class="reference internal" href="#figure3"><span class="std std-ref">(Figure 3)</span></a></p>
@@ -451,7 +451,7 @@ For the size, at least 25GB is recommended</p>
 <a class="reference internal image-reference" href="../_images/figure3.png"><img alt="../_images/figure3.png" src="../_images/figure3.png" style="height: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">.</span><a class="headerlink" href="#figure3" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.3 </span><span class="caption-text">.</span><a class="headerlink" href="#figure3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Now go to Storage and select the “Empty” CD icon <a class="reference internal" href="#figure4"><span class="std std-ref">(Figure 4)</span></a></p>
@@ -459,7 +459,7 @@ For the size, at least 25GB is recommended</p>
 <a class="reference internal image-reference" href="../_images/figure4.png"><img alt="../_images/figure4.png" src="../_images/figure4.png" style="height: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">.</span><a class="headerlink" href="#figure4" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.4 </span><span class="caption-text">.</span><a class="headerlink" href="#figure4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>On the right side, you will see another CD icon next to “IDE Secondary Master,” select it then choose “Choose a disk file” then select the ISO you downloaded earlier. <a class="reference internal" href="#figure5"><span class="std std-ref">(Figure 5)</span></a></p>
@@ -467,13 +467,13 @@ For the size, at least 25GB is recommended</p>
 <a class="reference internal image-reference" href="../_images/figure5.png"><img alt="../_images/figure5.png" src="../_images/figure5.png" style="height: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 5 </span><span class="caption-text">.</span><a class="headerlink" href="#figure5" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.5 </span><span class="caption-text">.</span><a class="headerlink" href="#figure5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>After that select “OK” then “Start” your VM</p>
 </section>
 <section id="step-3-installing-ubuntu">
-<h2>Step 3: Installing Ubuntu<a class="headerlink" href="#step-3-installing-ubuntu" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.4. </span>Step 3: Installing Ubuntu<a class="headerlink" href="#step-3-installing-ubuntu" title="Link to this heading">#</a></h2>
 <p>The installation process is pretty self-explanitory.
 You are going to want to select “Install Ubuntu” on the first screen, then “Install third-party software for graphics …” on the second, then “Install Now”. You will have to fill out a form later, and then you are good to go.</p>
 <p>It is recommended that you save a snapshot after Ubuntu is properly installed so you don’t have to keep going through the process.</p>
@@ -524,7 +524,7 @@ You are going to want to select “Install Ubuntu” on the first screen, then �
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Docker</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Docker</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -544,10 +544,10 @@ You are going to want to select “Install Ubuntu” on the first screen, then �
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#downloads">Downloads</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-create-a-new-virtual-machine">Step 1: Create a new Virtual Machine</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-selecting-ubuntu-for-the-vm">Step 2: Selecting Ubuntu for the VM</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-installing-ubuntu">Step 3: Installing Ubuntu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#downloads">1.1. Downloads</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-create-a-new-virtual-machine">1.2. Step 1: Create a new Virtual Machine</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-selecting-ubuntu-for-the-vm">1.3. Step 2: Selecting Ubuntu for the VM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-installing-ubuntu">1.4. Step 3: Installing Ubuntu</a></li>
 </ul>
   </nav></div>
 
